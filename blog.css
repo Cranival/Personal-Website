@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Style
+https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png*/
+
+body {
+  background-color: #ffffbf;
+  color: #333;
+  font: 16px/28px arial sans-serif;
+}
+
+.topbarr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  z-index: 9999;
+  background-color: #ffc107;
+}
+
+.topbarr i {
+  display: inline-block;
+  padding: auto;
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 3px;
+}
+
+#container {
+  margin-top: 80px;
+  margin-bottom: -20px;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+#container h2 {
+  padding: 20px;
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+.heroo {
+  height: 320px;
+  background-image: url(img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  border-top: 5px solid #ffc107;
+  border-bottom: 5px solid lightskyblue;
+}
+
+.mainn {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mainn h2 {
+  font-size: 28px;
+  margin-top: -15px;
+  font-weight: bold;
+  text-indent: 0;
+}
+
+.mainn h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.mainn .penuliss {
+  font-size: 11px;
+  margin-top: -5px;
+  text-indent: 0px;
+}
+
+.mainn span {
+  color: #ffc107;
+}
+
+.mainn p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.footerss {
+  background-color: #ffc107;
+}
+
+.footerss .copy {
+  font-size: 12px;
+  padding: 6px;
+  text-align: center;
+  color: #fff;
+}
