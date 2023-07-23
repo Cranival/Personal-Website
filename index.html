@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="dist/css/final.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- akhir AOS -->
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -16,7 +19,7 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header class="nav absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
@@ -77,15 +80,15 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Muhamad Nur Khanib</span></h1>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Student & <span class="text-dark dark:text-white">Network Engineer</span></h2>
-            <p class="mb-10 font-medium leading-relaxed text-secondary">Belajar web programming itu mudah dan menyenangkan bukan. <span class="font-bold text-dark dark:text-white">bukan!</span></p>
+            <h1 class="text-base font-semibold text-primary md:text-xl lead">Halo Semua 👋, saya<span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl nip">Muhamad Nur Khanib</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl lead2">Student & <span class="text-dark dark:text-white">Network Engineer</span></h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary ketik"></p>
 
-            <a href="#contact" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
+            <a href="#contact" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="w-full self-end px-4 lg:w-1/2 read">
             <div class="relative mt-10 lg:right-0 lg:mt-9">
-              <img src="dist/img/khanib.png" alt="Muhamad Nur Khanib" class="relative z-10 mx-auto max-w-full" />
+              <img src="dist/img/khanib.png" alt="Muhamad Nur Khanib" class="relative z-10 mx-auto max-w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-150" />
               <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
                 <svg class="sm:w-96 sm:h-96 " width="280" height="280" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -106,12 +109,12 @@
     <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
+          <div class="mb-10 w-full px-4 lg:w-1/2" data-aos="fade-right" data-aos-duration="600">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
             <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Helo guys, kenalin nih!</h2>
             <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Lulusan SMK yang memiliki ketertarikan di bidang jaringan komputer dan desaign web. Berpengalaman dalam konfigurasi jaringan kabel dan wireless pada router.</p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
+          <div class="w-full px-4 lg:w-1/2" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
             <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Mari berteman</h3>
             <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
               Karena tidak ada yang lebih baik daripada seorang teman, kecuali berteman dengan coklat.
@@ -133,6 +136,7 @@
 
               <!-- Instagram -->
               <a
+              data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400"
                 href="https://instagram.com/ai_khanip"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
@@ -146,7 +150,7 @@
               </a>
 
               <!-- Twitter -->
-              <a
+              <a  data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400"
                 href="https://twitter.com/ai_khanip"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
@@ -160,7 +164,7 @@
               </a>
 
               <!-- TikTok -->
-              <a
+              <a  data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400"
                 href="https://tiktok.com/@hy_khanip"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
@@ -206,15 +210,15 @@
           </div>
         </div>
 
-        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12 ">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="600">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/1.png" alt="Landing Page" width="w-full" />
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Article page</h3>
             <p class="text-base font-medium text-secondary">Halaman artikel ini, adalah Project Pertama, yang saya buat semua menggunakan HTML dan CSS.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/2.png" alt="E-Commerce" width="w-full" />
             </div>
@@ -278,44 +282,44 @@
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Adalah sebuah Blogger Artikel, yang di tulis oleh Muhamad Nur Khanib Menggunakan bantuan ChatGPT</p>
+            <p class="text-md font-medium text-secondary md:text-lg">Adalah sebuah Blogger Artikel, yang ditulis oleh Muhamad Nur Khanib Menggunakan bantuan ChatGPT</p>
           </div>
         </div>
 
         <div class="flex flex-wrap ">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="programming">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 "  data-aos="zoom-in" data-aos-duration="600" id="programming">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-150">
               <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Tips Belajar Programming</a>
                 </h3>
-                <p class="mb-6 text-base font-medium text-secondary">Belajar pemrograman dapat menjadi perjalanan yang mengasyikkan, tetapi. </p>
+                <p class="mb-6 text-base font-medium text-secondary">Belajar pemrograman dapat menjadi perjalanan yang mengasyikkan, tetapi... </p>
                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " id="teknologi">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 "  data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100" id="teknologi">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-150">
               <img src="https://source.unsplash.com/360x200?Technology" alt="Teknologi dan Sains" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Teknologi dan Sains</a>
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Teknologi dan sains adalah dua bidang yang saling terkait erat yang terus.</p>
+                  Teknologi dan sains adalah dua bidang yang saling terkait erat yang terus...</p>
                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="gaya-hidup">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200" id="gaya-hidup">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-150">
               <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Menikmati Secangkir Kopi</a>
                 </h3>
-                <p class="mb-6 text-base font-medium text-secondary">Secangkir kopi lebih dari sekadar minuman, kopi adalah sebuah pengalaman yang.</p>
+                <p class="mb-6 text-base font-medium text-secondary">Secangkir kopi lebih dari sekadar minuman, kopi adalah sebuah pengalaman yang...</p>
                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
@@ -332,17 +336,19 @@
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
-            <div class="hidden my-alert md:text-lg w-full bg-green-100 rounded-full p-4 mb-1 text-sm text-green-700" role="alert">
-              <svg class="w-5 h-5 inline mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            <div class="hidden my-alert">
+            <div class="flex md:text-lg w-full bg-green-100 rounded-full p-4 mb-1 text-sm text-green-700" role="alert">
+              <svg class="w-5 h-5 inline text-center mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
               <div>
                   <span class="font-medium text-md md:text-lg">Terimakasih!</span> Pesan ada sudah kami terima.
               </div>
           </div>
+        </div>
             <!-- <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, sed.</p> -->
           </div>
         </div>
 
-        <form>
+        <form name="form-contact">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
@@ -357,19 +363,19 @@
               <textarea id="pesan" name="pesan" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
             </div>
             <div class="w-full px-4">
-              <button type="submit" class="btn-kirim w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
-            </div>
-            <div class="w-full px-4 hidden">
-              <button type="button" class="btn-loading w-full flex items-center rounded-full bg-primary px-8 py-3 text-white justify-center" disabled>
+              <button type="submit" class="btn-kirim  w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
+              <div class="hidden btn-loading">
+              <button type="button" class="flex w-full  items-center rounded-full bg-primary px-8 py-3 text-white justify-center" disabled>
                 <svg class="mr-3 h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 <span class="font-medium"> Loading... </span>
               </button>
+              </div>
             </div>
-          
-          </div>
+              
+            </div>
         </form>
       </div>
     </section>
@@ -512,5 +518,29 @@
     <!-- Back to top End -->
 
     <script src="dist/js/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- akhir AOS -->
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+ <!-- GSAP animasi pada jumbotron -->
+ <script>
+ gsap.registerPlugin(TextPlugin);
+ gsap.to(".ketik", { duration: 1, delay: 1.5, text: "Suka membaca komik dengan genre action, comedy dan fantasy." });
+  gsap.from(".nav", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+  gsap.from(".lead", { duration: 1, x: -50, opacity: 0, ease: "back", delay: 0.5 });
+  gsap.from(".lead2", { duration: 1, x: -50, opacity: 0, ease: "back", delay: 0.5 });
+  gsap.from(".read", { duration: 1, x: 50, opacity: 0, ease: "back", delay: 0.5 });
+  
+
+</script> 
+<!-- akhir GSAP animasi pada jumbotron -->
+    <!-- Akhir GSAP -->
   </body>
 </html>
